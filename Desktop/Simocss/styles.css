@@ -1,0 +1,176 @@
+/* ===============================
+   Farmers Market Styles
+   =============================== */
+:root {
+  --space-0: 0;
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --radius: 10px;
+  --border: 1px;
+  --maxw: 1100px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
+  --brand: #16a34a; /* green */
+  --brand-light: #dcfce7;
+  --ink: #0b1320;
+  --ink-2: #374151;
+  --bg: #f7fafc;
+  --surface: #ffffff;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: var(--space-0);
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+/* Headers */
+.site-header {
+  text-align: center;
+  padding: var(--space-4) var(--space-2);
+  background: linear-gradient(90deg, #bbf7d0, #dcfce7);
+}
+.site-header h1 {
+  margin-bottom: var(--space-1);
+}
+.tagline {
+  color: var(--brand);
+  font-weight: bold;
+}
+
+/* Navigation */
+.site-nav {
+  background: var(--surface);
+  border-top: var(--border) solid #e2e8f0;
+  border-bottom: var(--border) solid #e2e8f0;
+}
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-2);
+  justify-content: center;
+  padding: var(--space-2);
+  margin: 0;
+}
+.site-nav a {
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius);
+  color: var(--ink);
+  text-decoration: none;
+}
+.site-nav a:hover {
+  background: var(--brand-light);
+}
+
+/* Container */
+.container {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-2);
+  display: grid;
+  gap: var(--space-3);
+}
+
+/* Panels */
+.panel {
+  background: var(--surface);
+  padding: var(--space-3);
+  border: var(--border) solid #e2e8f0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* Product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-3);
+}
+.product-card {
+  padding: var(--space-2);
+  border: var(--border) solid #e2e8f0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.product-card img {
+  max-width: 100%;
+  border-radius: var(--radius);
+}
+.price {
+  color: var(--brand);
+  font-weight: bold;
+  margin: var(--space-1) 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius);
+  border: none;
+  background: var(--brand);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btn:hover {
+  background: #15803d;
+}
+
+/* Two-column section */
+.two-column {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-3);
+}
+.info-box {
+  background: var(--brand-light);
+  padding: var(--space-2);
+  border-radius: var(--radius);
+}
+
+/* Lists */
+.benefits {
+  padding-left: var(--space-3);
+}
+.benefits li {
+  margin: var(--space-1) 0;
+}
+
+/* Contact form */
+.contact-form {
+  display: grid;
+  gap: var(--space-2);
+  max-width: 500px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: var(--space-1);
+  border: var(--border) solid #ccc;
+  border-radius: var(--radius);
+}
+
+/* Footer */
+.site-footer {
+  text-align: center;
+  padding: var(--space-3);
+  background: #f0fdf4;
+  color: var(--ink-2);
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+}

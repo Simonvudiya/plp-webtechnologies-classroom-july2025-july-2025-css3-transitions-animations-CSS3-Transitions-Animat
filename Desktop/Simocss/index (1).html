@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Farmers Market</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Farmers Market</h1>
+    <p class="tagline">Fresh produce directly from local farmers</p>
+  </header>
+
+  <nav class="site-nav" aria-label="Main">
+    <ul>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <section id="products" class="panel">
+      <h2>Available Products</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <img src="https://via.placeholder.com/200x150.png?text=Tomatoes" alt="Tomatoes">
+          <h3>Fresh Tomatoes</h3>
+          <p>Juicy organic tomatoes grown with care.</p>
+          <p class="price">Ksh 150 / Kg</p>
+          <button class="btn">Buy Now</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://via.placeholder.com/200x150.png?text=Maize" alt="Maize">
+          <h3>Dry Maize</h3>
+          <p>Clean, sun-dried maize ready for milling.</p>
+          <p class="price">Ksh 120 / 2Kg</p>
+          <button class="btn">Buy Now</button>
+        </article>
+
+        <article class="product-card">
+          <img src="https://via.placeholder.com/200x150.png?text=Vegetables" alt="Vegetables">
+          <h3>Mixed Vegetables</h3>
+          <p>A healthy pack of spinach, kales, and cabbages.</p>
+          <p class="price">Ksh 100 / Bunch</p>
+          <button class="btn">Buy Now</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="panel two-column">
+      <div>
+        <h2>About Our Market</h2>
+        <p>
+          Farmers Market is a platform that connects local farmers directly with customers.
+          By buying here, you support sustainable farming and get the freshest products at fair prices.
+        </p>
+        <ul class="benefits">
+          <li>Fresh from the farm</li>
+          <li>Fair farmer prices</li>
+          <li>Healthy, organic produce</li>
+        </ul>
+      </div>
+      <aside class="info-box">
+        <h3>Our Mission</h3>
+        <p>
+          To empower farmers by giving them a direct market while ensuring customers get
+          affordable, fresh, and organic produce daily.
+        </p>
+      </aside>
+    </section>
+
+    <section id="contact" class="panel">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>&copy; 2025 Farmers Market. All rights reserved.</small>
+  </footer>
+</body>
+</html>
