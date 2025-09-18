@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Animations</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🎬 CSS & JavaScript Magic</h1>
+
+  <!-- Part 1: CSS Animations -->
+  <button class="fancy-btn">Hover Me</button>
+  <div class="animated-box"></div>
+
+  <!-- Part 2 & 3: JS Functions + Animations -->
+  <section>
+    <button id="animateBtn">Animate Box</button>
+    <button id="flipBtn">Flip Card</button>
+    <button id="popupBtn">Show Popup</button>
+  </section>
+
+  <!-- Card for flip animation -->
+  <div class="card" id="card">
+    <div class="card-inner">
+      <div class="card-front">Front</div>
+      <div class="card-back">Back</div>
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <p>Hello! I slide in and out ✨</p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
